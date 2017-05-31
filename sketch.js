@@ -28,7 +28,7 @@ function preload() {
 
 function setup() {
     createCanvas(1900, 1000);
-
+    background(255);
     //  mouseClicked(selectflower);
 
 }
@@ -59,7 +59,7 @@ function mouseClicked() {
     }
 
     if (mouseX > 70 && mouseX < 130 && mouseY > 820 && mouseY < 900) {
-
+        saveCanvas('myCanvas', 'jpg');
         masterbutton = 8;
 
     }
@@ -81,8 +81,8 @@ function draw() {
 
         if (mouseIsPressed) {
 
-            append(peachflower, mouseX);
-            append(peachflower, mouseY);
+            append(peachflower, mouseX - 80);
+            append(peachflower, mouseY - 80);
         }
     }
 
@@ -98,8 +98,8 @@ function draw() {
 
         if (mouseIsPressed) {
 
-            append(purpleflower, mouseX);
-            append(purpleflower, mouseY);
+            append(purpleflower, mouseX - 80);
+            append(purpleflower, mouseY - 80);
         }
 
 
@@ -117,8 +117,8 @@ function draw() {
 
         if (mouseIsPressed) {
 
-            append(redflower, mouseX);
-            append(redflower, mouseY);
+            append(redflower, mouseX - 80);
+            append(redflower, mouseY - 80);
         }
 
 
